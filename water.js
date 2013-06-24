@@ -30,7 +30,7 @@ var rect = new Kinetic.Rect({
   y: 0,
   width: width/2,
   height: height,
-  fill: 'red'
+  fill: 'blue'
 });
 rect.on('touchstart touchmove mousemove', function(evt) {
   $('#message').html(new Date().getTime());
