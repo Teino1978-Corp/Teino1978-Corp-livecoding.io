@@ -37,8 +37,7 @@ $.getScript('https://gist.github.com/gabrielflorit/5853528/raw/2f2a31e9eb54971dd
     width: width/2,
     height: height,
     fill: 'blue',
-    listening: false,
-    visible: false
+    listening: false
   });
   rect.on('touchstart touchmove mousemove', function(evt) {
     $('#message').html(new Date().getTime());
