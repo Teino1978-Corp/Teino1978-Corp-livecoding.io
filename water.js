@@ -32,7 +32,7 @@ var rect = new Kinetic.Rect({
   height: 100,
   fill: 'red'
 });
-rect.on('touchstart touchmove mouseover', function() {
+rect.on('touchstart touchmove mousemove', function() {
   $('#message').html(new Date().getTime());
 });
 mapLayer.add(rect);
