@@ -1,7 +1,6 @@
 {
     "libraries": [
         "d3",
-        "KineticJS",
         "TopoJSON"
     ],
     "mode": "javascript",
