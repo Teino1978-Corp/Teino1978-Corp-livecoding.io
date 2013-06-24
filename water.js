@@ -16,7 +16,25 @@ stage.setWidth(width);
 stage.setHeight(height);
 stage.setScale(width/originalWidth);
 
+var mapLayer = new Kinetic.Layer();
+var topLayer = new Kinetic.Layer();
+
+stage.add(mapLayer);
+stage.add(topLayer);
+
 stage.draw();
+
+mapLayer.add(new Kinetic.Path({
+  data: path(state),
+  stroke: '#FFFFFF',
+  strokeWidth: 1,
+  name: state.features[0].properties.STATE,
+  lineCap: 'round',
+  lineJoin: 'round'
+}));
+
+mapLayer.draw();
+
 
 
 
