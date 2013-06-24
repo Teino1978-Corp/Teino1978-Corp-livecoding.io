@@ -14,6 +14,8 @@ stage.setWidth(width);
 stage.setHeight(height);
 stage.setScale(width/originalWidth);
 
+stage.draw();
+
 
 
 
