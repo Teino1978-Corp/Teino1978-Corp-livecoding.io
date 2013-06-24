@@ -11,11 +11,8 @@ var ratio = originalWidth/originalHeight;
 var container = $('#container');
 var width = container.width();
 var height = width/ratio;
-var canvas = $('canvas').get(0);
-canvas.width = width;
-canvas.height = height;
 
-/* var stage = new Kinetic.Stage({container: container.get(0)});
+var stage = new Kinetic.Stage({container: container.get(0)});
 stage.setWidth(width);
 stage.setHeight(height);
 stage.setScale(width/originalWidth);
@@ -28,7 +25,16 @@ stage.add(topLayer);
 
 stage.draw();
 
-mapLayer.add(new Kinetic.Path({
+var rect = new Kinetic.Rect({
+  x: 0,
+  y: 0,
+  width: 100,
+  height: 100,
+  fill: 'red'
+});
+mapLayer.add(rect);
+
+/* mapLayer.add(new Kinetic.Path({
   data: path(state),
   stroke: '#FFFFFF',
   strokeWidth: 1,
@@ -36,9 +42,8 @@ mapLayer.add(new Kinetic.Path({
   lineCap: 'round',
   lineJoin: 'round'
 }));
-
-mapLayer.draw();
  */
+mapLayer.draw();
 
 
 
