@@ -29,7 +29,7 @@ var rect = new Kinetic.Rect({
   x: 0,
   y: 0,
   width: 100,
-  height: 100,
+  height: height,
   fill: 'red'
 });
 rect.on('touchstart touchmove mousemove', function(evt) {
