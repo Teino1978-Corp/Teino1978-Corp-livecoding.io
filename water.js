@@ -9,12 +9,15 @@ var originalHeight = Math.ceil(bounds[1][1]);
 var ratio = originalWidth/originalHeight;
 
 var container = $('#container');
+var width = container.width();
+var height = container.height();
 var stage = new Kinetic.Stage({container: container.get(0)});
 stage.setWidth(width);
 stage.setHeight(height);
 stage.setScale(width/originalWidth);
 
 stage.draw();
+
 
 
 
