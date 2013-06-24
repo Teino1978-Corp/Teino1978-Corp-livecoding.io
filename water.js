@@ -2,7 +2,7 @@ $.ajaxSetup({
   cache: true
 });
 
-$.getScript('https://gist.github.com/gabrielflorit/5853528/raw/2f2a31e9eb54971ddf5f978151607344144310ca/kinetic.js', function() {
+$.getScript('https://gist.github.com/gabrielflorit/5853528/raw/aceefadb8417f342ceb8124010ae804719f83534/kinetic.js', function() {
   
   var geo = livecoding.json;
   var state = topojson.feature(geo, geo.objects.State);
@@ -37,7 +37,7 @@ $.getScript('https://gist.github.com/gabrielflorit/5853528/raw/2f2a31e9eb54971dd
     width: width/2,
     height: height,
     fill: 'blue',
-    listening: false
+    listening: true
   });
   rect.on('touchstart touchmove mousemove', function(evt) {
     $('#message').html(new Date().getTime());
