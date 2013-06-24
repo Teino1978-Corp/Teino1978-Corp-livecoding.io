@@ -13,7 +13,7 @@ var width = container.width();
 var height = container.height();
 var stage = new Kinetic.Stage({container: container.get(0)});
 stage.setWidth(width);
-stage.setHeight(height);
+stage.setHeight(width/ratio);
 stage.setScale(width/originalWidth);
 
 var mapLayer = new Kinetic.Layer();

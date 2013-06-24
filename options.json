@@ -4,7 +4,7 @@
         "KineticJS",
         "TopoJSON"
     ],
-    "mode": "javascript",
+    "mode": "html",
     "layout": "fullscreen mode (vertical)",
     "resolution": "reset"
 }
