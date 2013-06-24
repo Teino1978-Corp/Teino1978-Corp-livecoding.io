@@ -28,7 +28,7 @@ stage.draw();
 var rect = new Kinetic.Rect({
   x: 0,
   y: 0,
-  width: 100,
+  width: width/2,
   height: height,
   fill: 'red'
 });
