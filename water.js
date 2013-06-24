@@ -1,3 +1,7 @@
+$.ajaxSetup({
+  cache: true
+});
+
 $.getScript('https://gist.github.com/gabrielflorit/5853528/raw/2f2a31e9eb54971ddf5f978151607344144310ca/kinetic.js', function() {
   
   var geo = livecoding.json;
