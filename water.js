@@ -10,10 +10,14 @@ var ratio = originalWidth/originalHeight;
 
 var container = $('#container');
 var width = container.width();
-var height = container.height();
-var stage = new Kinetic.Stage({container: container.get(0)});
+var height = width/ratio;
+var canvas = $('canvas').get(0);
+canvas.width = width;
+canvas.height = height;
+
+/* var stage = new Kinetic.Stage({container: container.get(0)});
 stage.setWidth(width);
-stage.setHeight(width/ratio);
+stage.setHeight(height);
 stage.setScale(width/originalWidth);
 
 var mapLayer = new Kinetic.Layer();
@@ -34,7 +38,7 @@ mapLayer.add(new Kinetic.Path({
 }));
 
 mapLayer.draw();
-
+ */
 
 
 
