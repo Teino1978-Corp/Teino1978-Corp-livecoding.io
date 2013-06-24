@@ -1,0 +1,10 @@
+{
+    "libraries": [
+        "d3",
+        "KineticJS",
+        "TopoJSON"
+    ],
+    "mode": "css",
+    "layout": "fullscreen mode (vertical)",
+    "resolution": "reset"
+}
